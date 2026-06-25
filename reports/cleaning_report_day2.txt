@@ -1,0 +1,55 @@
+DATA CLEANING REPORT - Day 2
+============================================================
+
+
+============================================================
+  STEP 1 — Cleaning nav_history
+============================================================
+  Loaded        : 46,000 rows
+  [OK] All dates parsed successfully
+  [OK] Sorted by amfi_code + date
+  [OK] Duplicates removed : 0
+  [OK] NAV <= 0 removed   : 0
+  [OK] Forward-filled     : 18,320 gap rows added
+  Final shape             : 64,320 rows x 3 cols
+  NAV range               : 26.1366 to 4268.5497
+  Date range              : 2022-01-03 to 2026-05-29
+  Saved -> data/processed/02_nav_history.csv
+
+============================================================
+  STEP 2 — Cleaning investor_transactions
+============================================================
+  Loaded        : 32,778 rows
+  [OK] All dates parsed successfully
+  [OK] transaction_type   : {'SIP': 19716, 'Lumpsum': 8095, 'Redemption': 4967}
+  [OK] amount <= 0 removed: 0
+  [OK] KYC status values  : {'Verified': 30146, 'Pending': 2632}
+  Final shape             : 32,778 rows x 13 cols
+  Saved -> data/processed/08_investor_transactions.csv
+
+============================================================
+  STEP 3 — Cleaning scheme_performance
+============================================================
+  Loaded        : 40 rows
+  [OK] return_1yr_pct               range: 4.26% to 24.93%
+  [OK] return_3yr_pct               range: 5.14% to 23.39%
+  [OK] return_5yr_pct               range: 5.43% to 23.80%
+  [OK] benchmark_3yr_pct            range: 3.96% to 22.16%
+  [OK] expense_ratio_pct  all within 0.1%-2.5% (range: 0.55%-1.64%)
+  [OK] Beats benchmark    : 40 / 40 funds
+  [OK] Alpha < -3 flag    : 0 funds
+  [OK] Drawdown > 30% flag: 5 funds
+  [OK] Negative 5yr flag  : 0 funds
+  Final shape             : 40 rows x 23 cols
+  Saved -> data/processed/07_scheme_performance.csv
+
+============================================================
+  STEP 4 — Processing remaining 7 datasets
+============================================================
+  [OK] 01_fund_master.csv                           40 rows saved
+  [OK] 03_aum_by_fund_house.csv                     90 rows saved
+  [OK] 04_monthly_sip_inflows.csv                   48 rows saved
+  [OK] 05_category_inflows.csv                     144 rows saved
+  [OK] 06_industry_folio_count.csv                  21 rows saved
+  [OK] 09_portfolio_holdings.csv                   322 rows saved
+  [OK] 10_benchmark_indices.csv                   8050 rows saved
