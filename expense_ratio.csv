@@ -1,0 +1,41 @@
+Scheme_Code,Scheme_Name,Expense_Ratio
+DEMO01,Demo Fund 01 (Large Cap),0.79
+DEMO02,Demo Fund 02 (Large Cap),0.84
+DEMO03,Demo Fund 03 (Large Cap),0.98
+DEMO04,Demo Fund 04 (Large Cap),0.93
+DEMO05,Demo Fund 05 (Large Cap),0.5
+DEMO06,Demo Fund 06 (Large Cap),0.69
+DEMO07,Demo Fund 07 (Flexi Cap),1.11
+DEMO08,Demo Fund 08 (Flexi Cap),0.75
+DEMO09,Demo Fund 09 (Flexi Cap),1.11
+DEMO10,Demo Fund 10 (Flexi Cap),1.01
+DEMO11,Demo Fund 11 (Flexi Cap),1.03
+DEMO12,Demo Fund 12 (Flexi Cap),0.71
+DEMO13,Demo Fund 13 (Mid Cap),0.91
+DEMO14,Demo Fund 14 (Mid Cap),0.96
+DEMO15,Demo Fund 15 (Mid Cap),1.27
+DEMO16,Demo Fund 16 (Mid Cap),0.91
+DEMO17,Demo Fund 17 (Mid Cap),1.17
+DEMO18,Demo Fund 18 (Mid Cap),1.19
+DEMO19,Demo Fund 19 (Small Cap),1.18
+DEMO20,Demo Fund 20 (Small Cap),0.96
+DEMO21,Demo Fund 21 (Small Cap),1.17
+DEMO22,Demo Fund 22 (Small Cap),1.32
+DEMO23,Demo Fund 23 (Small Cap),1.43
+DEMO24,Demo Fund 24 (ELSS),0.9
+DEMO25,Demo Fund 25 (ELSS),0.85
+DEMO26,Demo Fund 26 (ELSS),1.0
+DEMO27,Demo Fund 27 (ELSS),1.15
+DEMO28,Demo Fund 28 (ELSS),1.16
+DEMO29,Demo Fund 29 (Value),0.78
+DEMO30,Demo Fund 30 (Value),0.91
+DEMO31,Demo Fund 31 (Value),1.18
+DEMO32,Demo Fund 32 (Value),0.89
+DEMO33,Demo Fund 33 (Focused),1.01
+DEMO34,Demo Fund 34 (Focused),1.0
+DEMO35,Demo Fund 35 (Focused),1.03
+DEMO36,Demo Fund 36 (Focused),0.79
+DEMO37,Demo Fund 37 (Contra),1.08
+DEMO38,Demo Fund 38 (Contra),1.13
+DEMO39,Demo Fund 39 (Contra),1.05
+DEMO40,Demo Fund 40 (Contra),1.02
