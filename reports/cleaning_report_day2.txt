@@ -3,7 +3,7 @@ DATA CLEANING REPORT - Day 2
 
 
 ============================================================
-  STEP 1 — Cleaning nav_history
+  STEP 1 � Cleaning nav_history
 ============================================================
   Loaded        : 46,000 rows
   [OK] All dates parsed successfully
@@ -17,7 +17,7 @@ DATA CLEANING REPORT - Day 2
   Saved -> data/processed/02_nav_history.csv
 
 ============================================================
-  STEP 2 — Cleaning investor_transactions
+  STEP 2 � Cleaning investor_transactions
 ============================================================
   Loaded        : 32,778 rows
   [OK] All dates parsed successfully
@@ -28,7 +28,7 @@ DATA CLEANING REPORT - Day 2
   Saved -> data/processed/08_investor_transactions.csv
 
 ============================================================
-  STEP 3 — Cleaning scheme_performance
+  STEP 3 � Cleaning scheme_performance
 ============================================================
   Loaded        : 40 rows
   [OK] return_1yr_pct               range: 4.26% to 24.93%
@@ -44,7 +44,7 @@ DATA CLEANING REPORT - Day 2
   Saved -> data/processed/07_scheme_performance.csv
 
 ============================================================
-  STEP 4 — Processing remaining 7 datasets
+  STEP 4 � Processing remaining 7 datasets
 ============================================================
   [OK] 01_fund_master.csv                           40 rows saved
   [OK] 03_aum_by_fund_house.csv                     90 rows saved

@@ -1,0 +1,47 @@
+DATA QUALITY REPORT -- Day 1
+==================================================
+
+-- AMFI Code Validation --
+  fund_master unique codes  : 40
+  nav_history unique codes  : 40
+  Matched (both datasets)   : 40
+  Missing NAV history       : 0
+  Extra in NAV              : 0
+
+-- Per-Dataset Anomalies --
+
+  fund_master:
+    * Column 'launch_date' is date/time stored as string - consider pd.to_datetime()
+
+  nav_history:
+    * Column 'date' is date/time stored as string - consider pd.to_datetime()
+
+  aum_by_fund_house:
+    * Column 'date' is date/time stored as string - consider pd.to_datetime()
+
+  monthly_sip_inflows:
+    * NULL values -> {'yoy_growth_pct': 12}
+    * Column 'month' is date/time stored as string - consider pd.to_datetime()
+
+  category_inflows:
+    * Column 'month' is date/time stored as string - consider pd.to_datetime()
+
+  industry_folio_count:
+    * Column 'month' is date/time stored as string - consider pd.to_datetime()
+
+  investor_transactions:
+    * Column 'transaction_date' is date/time stored as string - consider pd.to_datetime()
+
+  portfolio_holdings:
+    * Column 'portfolio_date' is date/time stored as string - consider pd.to_datetime()
+
+  benchmark_indices:
+    * Column 'date' is date/time stored as string - consider pd.to_datetime()
+
+-- Known Issues --
+  04_monthly_sip_inflows:
+    * yoy_growth_pct has 12 NULLs (rows 1-12, Jan-Dec 2022).
+      EXPECTED: YoY cannot be computed without prior-year baseline.
+      Action: document and fill when 2021 data is available.
+
+  All other datasets: zero nulls, zero duplicates.
