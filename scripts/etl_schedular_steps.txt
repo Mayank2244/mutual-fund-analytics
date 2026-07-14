@@ -1,0 +1,31 @@
+# 1. Test immediately
+python etl_scheduler.py --run-now
+
+# 2. Start continuous scheduler (runs at 8 PM every weekday)
+python etl_scheduler.py
+
+# 3. Register as Windows Task (auto-runs even when VS Code closed)
+python etl_scheduler.py --setup-windows
+
+# 4. Check last run status
+python etl_scheduler.py --status
+
+# 5. See last 10 run history
+python etl_scheduler.py --history
+
+# 6. Remove Windows Task
+python etl_scheduler.py --remove-windows
+
+# Step 1 — install schedule library
+pip install schedule
+
+# Step 2 — test it works
+python etl_scheduler.py --run-now
+
+# Step 3 — register as Windows Task (run terminal as Administrator)
+python etl_scheduler.py --setup-windows
+
+# Step 4 — commit
+git add etl_scheduler.py
+git commit -m "B1: Single-file ETL scheduler - auto NAV fetch weekdays 8PM"
+git push origin main
